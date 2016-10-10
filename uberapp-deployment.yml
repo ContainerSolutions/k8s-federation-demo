@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: uberapp-deployment
+spec:
+  replicas: 4 
+  template: # create pods using pod definition in this template
+    metadata:
+      labels:
+        app: uberapp
+    spec:
+      containers:
+      - name: uberapp
+        image: jocatalin/uberapp:v1
+        ports:
+        - containerPort: 8080
