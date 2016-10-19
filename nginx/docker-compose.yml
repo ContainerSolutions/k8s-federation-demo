@@ -1,0 +1,6 @@
+web:
+    image: mattwilliamsnyc/nginx:mainline
+    ports:
+        - 8080:80
+    volumes:
+        - ./vhost.conf:/etc/nginx/sites-available/default:ro
