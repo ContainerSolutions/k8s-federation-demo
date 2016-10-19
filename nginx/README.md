@@ -1,7 +1,13 @@
 # Nginx configuration that provides basic stats
 
-1. docker-compose up -d
-1. curl http://localhost:8080/basic_status
+1. start container
+    ```bash
+    docker-compose up -d
+    ```
+2. get stats
+    ```bash
+    curl http://localhost:8080/basic_status
+    ```
 
 Response looks like this
 
