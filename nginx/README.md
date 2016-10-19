@@ -1,6 +1,7 @@
-Nginx configuration that provides basic stats
-# docker-compose up -d
-# curl http://localhost:8080/basic_status
+# Nginx configuration that provides basic stats
+
+1. docker-compose up -d
+1. curl http://localhost:8080/basic_status
 
 Response looks like this
 
